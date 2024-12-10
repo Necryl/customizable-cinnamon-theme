@@ -1,5 +1,5 @@
-@import '../base/variables';
-@import '../base/functions';
+@import "../base/variables";
+@import "../base/functions";
 
 .popup-menu-boxpointer {
   -arrow-border-radius: $border-radius;
@@ -30,7 +30,6 @@
     }
   }
 }
-
 
 .popup-combo-menu {
   background-color: $menu-background;

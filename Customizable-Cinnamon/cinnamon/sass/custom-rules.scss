@@ -1,3 +1,58 @@
 /*
  * add your custom rules here
  */
+.menu,
+#panel {
+  background-blur: 2px;
+  border-top: 1px solid rgba(255, 255, 255, 0.199);
+}
+
+#panel * {
+  border-color: transparent;
+  border-radius: 0px !important;
+}
+#panel *:hover {
+  border-color: $color-border;
+}
+
+#panel *:active {
+  border-color: $color-border;
+}
+
+#panel *:focus {
+  border-color: rgba(255, 255, 255, 0.205);
+}
+
+.window-list-item-box .progress,
+.grouped-window-list-item-box .progress {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(31, 241, 66, 0.3);
+  background-gradient-end: rgba(35, 230, 181, 0.3);
+}
+
+.applet-cornerbar-box {
+  padding: 0px 0px;
+  margin-left: 4px;
+
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.applet-cornerbar {
+  width: 8px;
+  background: rgba(255, 255, 255, 0);
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.applet-cornerbar.vertical {
+  height: 8px;
+}
+
+.applet-cornerbar-box:hover > .applet-cornerbar {
+  background: rgba(255, 255, 255, 0.05);
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.system-status-icon {
+  padding-left: 5px;
+  padding-right: 5px;
+}

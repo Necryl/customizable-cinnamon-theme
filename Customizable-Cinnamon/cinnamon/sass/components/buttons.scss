@@ -1,10 +1,9 @@
-@import '../base/variables';
+@import "../base/variables";
 
 .notification-button,
 .notification-icon-button,
 .modal-dialog-button,
 .sound-player-overlay StButton {
-
   color: $button-text;
   border: $button-border;
   background-gradient-start: $button-background;
@@ -19,7 +18,8 @@
     background: $button-hover;
   }
 
-  &:pressed, &:active {
+  &:pressed,
+  &:active {
     background-gradient-start: $button-pressed;
     background-gradient-end: $button-pressed;
     background: $button-pressed;

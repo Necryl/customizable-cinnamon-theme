@@ -1,5 +1,5 @@
-@import '../base/variables';
-@import '../base/functions';
+@import "../base/variables";
+@import "../base/functions";
 
 #panel {
   color: $panel-text;
@@ -49,7 +49,9 @@
   -panel-corner-background-color: $panel-background;
   -panel-corner-outer-border-color: $color-border;
 
-  &:active, &:overview, &:focus {
+  &:active,
+  &:overview,
+  &:focus {
     -panel-corner-inner-border-color: $color-active;
   }
 }
@@ -63,11 +65,12 @@
     text-shadow: transparent 0px 0px 0px;
   }
 
-  &:active, &:checked, &:focus, &:overview {
-
+  &:active,
+  &:checked,
+  &:focus,
+  &:overview {
     > .system-status-icon {
       icon-shadow: transparent 0px 0px 0px;
     }
-
   }
 }

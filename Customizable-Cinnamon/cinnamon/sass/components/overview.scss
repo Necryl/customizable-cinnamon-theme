@@ -1,4 +1,4 @@
-@import '../base/variables';
+@import "../base/variables";
 
 #overview {
   spacing: 12px;
@@ -13,7 +13,6 @@
     color: $overview-text;
   }
 }
-
 
 .workspace-thumbnails-background {
   border: $overview-border;
@@ -78,5 +77,4 @@
     border: $overview-border;
     background-color: $overview-hover;
   }
-
 }

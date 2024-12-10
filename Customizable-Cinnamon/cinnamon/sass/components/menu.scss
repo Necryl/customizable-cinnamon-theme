@@ -1,8 +1,9 @@
-@import '../base/mixins';
-@import '../base/variables';
+@import "../base/mixins";
+@import "../base/variables";
 
 .menu {
-  border-radius: $menu-border-radius;
+  border-radius: calc($menu-border-radius * 2) calc($menu-border-radius * 2) 0px
+    0px;
   background-color: $menu-background;
   border: $menu-border;
   color: $menu-text;
@@ -19,14 +20,13 @@
   transition-duration: $transition-duration;
 }
 
-.menu-favorites-button:hover,
 .menu-application-button-selected,
 .menu-category-button-selected {
   color: $color-text;
   background-gradient-start: $menu-hover;
   background-gradient-end: $menu-hover;
   background: $menu-hover;
-  box-shadow: inset 0px 0px 0px 0px rgba(255,255,255,0);
+  box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0);
   border: $menu-border;
   border-radius: $menu-border-radius;
   padding-top: calc(7px - $border-width);
@@ -35,12 +35,23 @@
   padding-right: calc(7px - $border-width);
 }
 
-.menu-favorites-button:hover {
+.menu-favorites-button {
   padding-top: calc(9px - $border-width);
   padding-bottom: calc(9px - $border-width);
   padding-left: calc(11px - $border-width);
   padding-right: calc(11px - $border-width);
   margin: 2px 0;
+  color: $color-text;
+  border-radius: $menu-border-radius;
+  border: $menu-border;
+  border-color: transparent;
+}
+.menu-favorites-button:hover {
+  box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0);
+  background-gradient-start: $menu-hover;
+  background-gradient-end: $menu-hover;
+  background: $menu-hover;
+  border: $menu-border;
 }
 
 .menu-places-box {
@@ -69,7 +80,8 @@
   transition-duration: $transition-duration;
   box-shadow: 0px 0px 0px transparent;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     border: $menu-border;
     background-gradient-start: $menu-hover;
     background-gradient-end: $menu-hover;
